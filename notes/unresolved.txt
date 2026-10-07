@@ -4,10 +4,4 @@
 # symbol | needed by
 GlobalDebugLevel() | draggle.so
 sePlaySound::sePlaySound(char*, int, unsigned long) | draggle.so
-ContinueControl::allowed() | draggle.so
-ContinueControl::display() | draggle.so
-Profiler::DelInstance() | draggle.so
-Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | draggle.so
-Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | draggle.so
 ustrzcat | draggle.so
-voice_stop | draggle.so
