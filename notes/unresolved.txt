@@ -2,88 +2,12 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-Debug_Flag_Set(char const*, char const*) | draggle.so
-ScreenIsTouched() | draggle.so
 GlobalDebugLevel() | draggle.so
-PlayWave(char*, unsigned short, int, int, int, bool) | draggle.so
-WorldClass::AnimationFrames(Bitmap*) | draggle.so
-WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | draggle.so
-WorldClass::GetFrame(Bitmap*, int) | draggle.so
-WorldClass::DeleteBmp(Bitmap*, unsigned char) | draggle.so
-WorldClass::LoadAdBmp(char const*, int, float, int, int, bool) | draggle.so
-WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | draggle.so
 sePlaySound::sePlaySound(char*, int, unsigned long) | draggle.so
-system_info::SystemInfo::GetInstance() | draggle.so
-system_info::SystemInfo::GetPlatformType(bool) | draggle.so
-MegacGlobals::PopWorld() | draggle.so
-MegacGlobals::PushWorld(char const*, char const*, bool) | draggle.so
-ListObjHeader::ListObjHeader() | draggle.so
 ContinueControl::allowed() | draggle.so
 ContinueControl::display() | draggle.so
-List::Push(Group*) | draggle.so
-List::Clear(unsigned char) | draggle.so
-List::IsEmpty() | draggle.so
-List::List(List*) | draggle.so
-Group::Signal(Group::SpriteSignalType) | draggle.so
-Group::Signal(SpriteSignal*) | draggle.so
-Group::Message(Group::SpriteSignalType) | draggle.so
-Group::Message(SpriteSignal*) | draggle.so
-Group::Group(List*, Group*) | draggle.so
-Group::~Group() | draggle.so
-ListT<Sprite>::Advance(int) | draggle.so
-ListT<Sprite>::ListT(List*) | draggle.so
-ListT<Sprite>::~ListT() | draggle.so
-EventO::GetType() | draggle.so
-EventO::EventO() | draggle.so
-EventO::EventO() | draggle.so
-EventO::~EventO() | draggle.so
-Sprite::AssignName(char*) | draggle.so
-Sprite::ColoredOff(unsigned long) | draggle.so
-Sprite::DoNextFrame() | draggle.so
-Sprite::SpriteClick() | draggle.so
-Sprite::AssignString(String*, unsigned long) | draggle.so
-Sprite::ChangeString(char const*, unsigned long) | draggle.so
-Sprite::LastEventTime() | draggle.so
-Sprite::DeleteAfterLast(unsigned long) | draggle.so
-Sprite::CreateTextDropShadow(float, float, unsigned long, int, int, int) | draggle.so
-Sprite::RunDiskAnimThenDelete(char const*, unsigned long, float, unsigned long, bool) | draggle.so
-Sprite::Copy() | draggle.so
-Sprite::Move(float, float, float, float, float, float, unsigned long, unsigned long, unsigned char) | draggle.so
-Sprite::Move(int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | draggle.so
-Sprite::Curve(int, int, int, int, int, int, int, int, int, int, int, int, unsigned long, unsigned long, unsigned char) | draggle.so
-Sprite::Reset() | draggle.so
-Sprite::Scale(float, float, unsigned long, unsigned long, unsigned char) | draggle.so
-Sprite::DoDraw() | draggle.so
-Sprite::Enable(unsigned long) | draggle.so
-Sprite::FadeIn(unsigned long, unsigned long, int, int) | draggle.so
-Sprite::SetBmp(Bitmap*, unsigned long) | draggle.so
-Sprite::Signal(Group::SpriteSignalType) | draggle.so
-Sprite::Signal(SpriteSignal*) | draggle.so
-Sprite::ColorIt(int, int, int, int, int, int, int, int, int, unsigned long) | draggle.so
-Sprite::Disable(unsigned long, bool) | draggle.so
-Sprite::FadeOut(unsigned long, unsigned long, int, int) | draggle.so
-Sprite::Message(Group::SpriteSignalType) | draggle.so
-Sprite::Message(SpriteSignal*) | draggle.so
-Sprite::RunAnim(Bitmap*, int, int, int, unsigned long, float, unsigned long, int) | draggle.so
-Sprite::ScaleXY(float, float, unsigned long) | draggle.so
-Sprite::SetCord(float, float, float, unsigned long) | draggle.so
-Sprite::SetSize(int, int) | draggle.so
-Sprite::AddEvent(EventO*) | draggle.so
-Sprite::SetAlpha(int, unsigned long) | draggle.so
-Sprite::DoCommand(int) | draggle.so
-Sprite::PlaySound(char*, int, unsigned long) | draggle.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | draggle.so
-Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | draggle.so
-Sprite::~Sprite() | draggle.so
-String::ChangeColor(int, int, int, unsigned char) | draggle.so
-String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | draggle.so
-ListObj::ListObj() | draggle.so
 Profiler::DelInstance() | draggle.so
 Profiler::Stop(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | draggle.so
 Profiler::Start(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) | draggle.so
-typeinfo for Group | draggle.so
-typeinfo for EventO | draggle.so
-typeinfo for Sprite | draggle.so
-gfx_driver | draggle.so
 ustrzcat | draggle.so
 voice_stop | draggle.so
